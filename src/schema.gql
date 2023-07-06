@@ -1,0 +1,34 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mesero {
+  id: ID!
+  identificacion: String!
+  nombre: String!
+  estado: Boolean!
+}
+
+type Query {
+  meseros: [Mesero!]!
+  mesero(id: ID!): Mesero!
+}
+
+type Mutation {
+  createMesero(createMeseroInput: CreateMeseroInput!): Mesero!
+  updateMesero(updateMeseroInput: UpdateMeseroInput!): Mesero!
+  removeMesero(id: ID!): Mesero!
+}
+
+input CreateMeseroInput {
+  identificacion: String!
+  nombre: String!
+  estado: Boolean!
+}
+
+input UpdateMeseroInput {
+  identificacion: String
+  nombre: String
+  estado: Boolean
+  id: ID!
+}
