@@ -14,4 +14,11 @@ WORKDIR /app
 COPY --from=Build /app/dist ./dist
 COPY --from=Deps-Produ /app/node_modules ./node_modules
 ENV NODE_ENV='production'
+ENV DB_PASSWORD='bYxTjMSTca6hv7wFwUST'
+ENV DB_NAME='mesero'
+ENV DB_HOST='containers-us-west-70.railway.app'
+ENV DB_PORT='7471'
+ENV DB_USERNAME='postgres'
+EXPOSE 3000
+
 CMD [ "node", "dist/main"]
