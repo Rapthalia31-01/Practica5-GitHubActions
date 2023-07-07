@@ -28,7 +28,7 @@
 
 ![Image text](./Captura/gitHubactions.jpg)
 
-* verificacion de que el api rest se encuentra funcionando ..
+* verificacion de que el api rest se encuentra funcionando ........
 ![Image text](./Captura/creaciongraphql.jpg)
 
 
